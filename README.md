@@ -24,16 +24,16 @@ Mouse Demo with Wii Remote Controller
 |NC |IO25  |P0(SDA)  |pull-up in ESP32 application|
 |NC |IO26  |P2(SCL)  |pull-up in ESP32 application|
 
-## Get started 
+## Setup 
 
-### Setup Digispark
+### Digispark
 
 1. Install Arduino libraries:
    - [TinyWireS](https://github.com/rambo/TinyWire)
 
 1. Flash [digispark-i2c2mouse.ino](./digispark-i2c2mouse/digispark-i2c2mouse.ino) to Digispark
 
-### Setup ESP32 dev board
+### ESP32 dev board
 
 1. Get btstack  
 ```
