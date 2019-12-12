@@ -31,27 +31,38 @@ Mouse Demo with Wii Remote Controller
 1. Install Arduino libraries:
    - [TinyWireS](https://github.com/rambo/TinyWire)
 
-1. Programming [Sketch](./digispark-i2c2mouse/digispark-i2c2mouse.ino) to Digispark
+1. Flash [digispark-i2c2mouse.ino](./digispark-i2c2mouse/digispark-i2c2mouse.ino) to Digispark
 
 ### Setup ESP32 dev board
 
-1. Get btstack
-`git clone https://github.com/bluekitchen/btstack.git`
+1. Get btstack  
+```
+$ git clone https://github.com/bluekitchen/btstack.git
+```
+2. Create Example Projects  
+Copy [wiimote_i2c_converter.c](./wiimote_i2c_converter.c) to btstack/examples.    
+※Modify `wiimote_addr_string = "AA-AA-AA-AA-AA-AA" ` in `wiimote_i2c_converter.c` to your Wii Controller's MAC Address.
 
-1. Create Example Projects
-Copy [wiimote_i2c_converter.c](./wiimote_i2c_converter.c) to btstack/examples  
-Note: Modify `wiimote_addr_string = "AA-AA-AA-AA-AA-AA" ` in `wiimote_i2c_converter.c` to your Wii Controller's MAC Address
-
-1. Programming to ESP32
-
+1. Copy parts of the BTstack tree into the ESP-IDF
 ```
 $ cd port/esp32
 $ ./integrate_btstack.py
+```
+
+4. Configure the serial port ※  
+```
 $ cd example/wiimote_i2c_converter
 $ make menuconfig
+```
+
+5. Build and Flash to ESP32
+
+```
 $ make
 $ make flash
 ```
+
+※You can find all active COM ports by `$ ls -l /dev/serial/by-id/`.
 
 ## Usage 
 
@@ -59,5 +70,5 @@ $ make flash
 
 1. To autoconnect, press the 1 and 2 buttons on Wii Remote
 
-1. The LED4 will be on when they have finished connecting
+1. The LED4 will be on when they have finished connecting  
 <img width="30%" src="./WiiRemoteLED.png" />  
