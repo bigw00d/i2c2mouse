@@ -8,7 +8,7 @@ Mouse Demo with Wii Remote Controller
 
 - [ESP32 dev board](https://www.switch-science.com/catalog/3210/)
 - ESP-IDF (xtensa-esp32-elf at the 1.22.0-80)
-- Digispark
+- [Digispark](https://www.amazon.co.jp/HiLetgo-Digispark-Kickstarter-ATTINY85-%E8%B6%85%E5%B0%8F%E5%9E%8BArduino%E4%BA%92%E6%8F%9B/dp/B07BJ2F2WZ)
 - Arduino IDE (Version: 1.8.5)
 - USB Connector (Micro B)
 
@@ -21,8 +21,8 @@ Mouse Demo with Wii Remote Controller
 |GND  |GND  |GND  ||
 |D+  | NC |D+  ||
 |D-  | NC |D-  ||
-|NC |IO25  |P0(SDA)  |pull-up in ESP32 program|
-|NC |IO26  |P2(SCL)  |pull-up in ESP32 program|
+|NC |IO25  |P0(SDA)  |pull-up in ESP32 application|
+|NC |IO26  |P2(SCL)  |pull-up in ESP32 application|
 
 ## Get started 
 
