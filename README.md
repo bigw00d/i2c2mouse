@@ -31,7 +31,7 @@ Mouse Demo with Wii Remote Controller
 1. Install Arduino libraries:
    - [TinyWireS](https://github.com/rambo/TinyWire)
 
-1. Programming to Digispark
+1. Programming [Sketch](./digispark-i2c2mouse/digispark-i2c2mouse.ino) to Digispark
 
 ### Setup ESP32 dev board
 
