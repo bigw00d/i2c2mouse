@@ -40,8 +40,8 @@ Mouse Demo with Wii Remote Controller
 $ git clone https://github.com/bluekitchen/btstack.git
 ```
 2. Create Example Projects  
-Copy [wiimote_i2c_converter.c](./wiimote_i2c_converter.c) to btstack/examples.    
-※Modify `wiimote_addr_string = "AA-AA-AA-AA-AA-AA" ` in `wiimote_i2c_converter.c` to your Wii Controller's MAC Address.
+    * Copy [wiimote_i2c_converter.c](./wiimote_i2c_converter.c) to btstack/examples.    
+    * Modify `wiimote_addr_string = "AA-AA-AA-AA-AA-AA" ` in `wiimote_i2c_converter.c` to your Wii Controller's MAC Address.
 
 1. Copy parts of the BTstack tree into the ESP-IDF
 ```
