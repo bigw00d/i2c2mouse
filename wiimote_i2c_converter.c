@@ -53,7 +53,7 @@
 #include "driver/i2c.h"
 
 // Wiimote
-static const char * wiimote_addr_string = "00-23-31-0F-7E-47";
+static const char * wiimote_addr_string = "AA-AA-AA-AA-AA-AA";
 static bd_addr_t wiimote_addr;
 
 #define WIIMOTE_DATA_PSM        0x13
